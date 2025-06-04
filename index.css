@@ -1,0 +1,909 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+body{
+    background-color: rgb(62, 62, 116);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(69, 69, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideright 1s ease forwards;
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+     100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    animation: slidetop .5s ease forwards;
+}
+.navbar a:hover{
+    color: aqua;
+}
+@keyframes slidetop{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+     100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+h1{
+    animation: slidetop 1s ease forwards 0.1s;
+}
+h2{
+    animation: slideright 1s ease forwards 0.1s;
+   
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+     100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.container1{
+    height: 500px;
+    width: 100vw;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.content{
+    height: 500px;
+    width: 50%;
+    /* background-color: aquamarine; */
+    /* margin-top: 50px; */
+    margin-left: 0px;
+    padding-top: 120px;
+    padding-left: 60px;
+    color: #fff;
+    row-gap: 30px;
+}
+.image{
+     height: 500px;
+    width: 450px;
+    /* background-color: rgb(8, 238, 161); */
+    /* margin-top: 50px; */
+    text-align: center;
+    padding-top: 50px;
+    /* transform: skewY(25deg); */
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+}
+.name{
+    font-size: 2.5rem;
+}
+.me{
+     font-size: 1.2rem;
+     animation: moveright 1s ease forwards 0.2s;
+}
+.my_img{
+    height: 350px;
+    width: 350px;
+   /* transform: skewY(-25deg); */
+   border-bottom-left-radius: 50%;
+   border-top-right-radius: 50%;
+   box-shadow: 10px 20px 45px rgb(250, 4, 250) , 10px 20px 45px rgb(92, 14, 92);
+   animation-name: siva;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes siva{
+   0%{
+    transform: translateY(-10px);
+   }
+   25%{
+    transform: translateY(20px);
+   }
+   50%{
+    transform: translateY(-20px);
+   }
+   100%{
+    transform: translateY(-10px);
+   }
+}
+.icons{
+    display: flex;
+    font-size: 2rem;
+    column-gap: 30px;
+    padding-top: 20px;
+}
+.change{
+    color: aqua;
+    animation-name: change1;
+    animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes change1{
+      0%{
+        transform: translateX(web developer);
+      }
+
+      50%{
+        transform: translateX(ui ux designer);
+      }
+}
+.icon_box{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 50%;
+    
+}
+.icon_box:hover{
+     background-color: aqua;
+    border: 2px solid aqua;
+    color: white;
+    box-shadow: 0 0 10px aqua,0 0 10px aqua;
+}
+.box1{
+    animation: moveright 1s ease forwards 0.1s;
+}
+.box2{
+    animation: moveright 1s ease forwards 0.2s;
+}
+.box3{
+    animation: moveright 1s ease forwards 0.3s ;
+}
+.box4{
+    animation: moveright 1s ease forwards 0.4s;
+}
+@keyframes moveright{
+     0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+     100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.b1{
+    border-radius: 200px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid aqua;
+    background-color: aqua;
+     animation: slidetop .5s ease forwards 0.2s;
+}
+.b1:hover{
+    box-shadow: 0 0 10px aqua,0 0 10px aqua;
+}
+.about{
+    height: 600px;
+    width: 1200px;
+    /* background-color: blue; */
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+}
+.img1{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 20px 45px rgb(9, 247, 41),20px 0px 60px rgb(252, 248, 12);
+    margin-top: 200px;
+    animation: slideright 1s ease forwards 0.1s;
+}
+.content1{
+    margin-top: 170px;
+    padding-left: 100px;
+    color: white;
+}
+.about_me{
+    font-size: 3rem;
+}
+.para{
+    font-size: 1.3rem;
+    padding-right: 10px;
+}
+.full{
+    font-size: 2rem;
+}
+.myserve{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.three_div{
+    height: 400px;
+    width: 1200px;
+    /* background-color: #fff; */
+    margin-left: 100px;
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+}
+.divs{
+    height: 250px;
+    width: 300px;
+    background-color: rgb(67, 67, 194);
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px blue,0px 0px 45px blue;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+.divs:hover{
+    transform: translateY(-20px);
+    transition: 1s linear ;
+}
+.icon1{
+    color: aqua;
+    font-size: 2rem;
+}
+.b2{
+    border-radius: 200px;
+    font-size: 1rem;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid aqua;
+    background-color: aqua;
+     animation: slidetop .5s ease forwards 0.2s;
+}
+.b2:hover{
+    box-shadow: 0 0 10px aqua,0 0 10px aqua;
+}
+.ui{
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.skills{
+    height: 500px;
+    width: 450px;
+    /* background-color: greenyellow; */
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+}
+.sk{
+    display: flex;
+    margin-top: 100px;
+}
+.myserve1{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    /* margin-top: 100px; */
+    display: block;
+}
+.skills1{
+    height: 400px;
+    width: 500px;
+    /* background-color: greenyellow; */
+    margin-top: 5px;
+    padding: 20px;
+}
+.sk1{
+    margin-left: 100px;
+}
+.sk2{
+    margin-left: 100px;
+}
+.color1{
+    color: orange;
+    font-size: 2rem;
+}
+.color2{
+    color: aqua;
+    font-size: 2rem;
+}
+.color3{
+    color: yellow;
+    font-size: 2rem;
+}
+.color4{
+    color: rgb(253, 2, 253);
+    font-size: 2rem;
+}
+.color5{
+    color: lightgreen;
+    font-size: 2rem;
+}
+.code{
+    margin-top: 20px;
+}
+.myserve2{
+    font-size: 2.6rem;
+    text-align: center;
+    color: white;
+    
+}
+.progress{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress{
+    height: 5px;
+    position: absolute;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: animate 1s linear cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.p1{
+    width: 90%;
+}
+.p2{
+    width: 90%;
+}
+.p3{
+    width: 40%;
+}
+.p4{
+    width: 70%;
+}
+.p5{
+    width: 90%;
+}
+.progress1{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress1{
+    height: 5px;
+    position: absolute;
+    background-color: aqua;
+    border-radius: 10px;
+    animation: animate 1s linear cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.create{
+    font-size: 2rem;
+    color: aqua;
+}
+.tech{
+    color: #fff;
+    font-size: 2rem;
+}
+.main{
+    color: #fff;
+    margin-top: 30px;
+}
+.p15{
+    width: 30%;
+}
+.p14{
+    width: 30%;
+}
+.p13{
+    width: 25%;
+}
+.p12{
+    width: 28%;
+}
+.myserve3{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.mypro{
+    height: 400px;
+    width: 1200px;
+    /* background-color: springgreen; */
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.pro1{
+    height: 350px;
+    width: 250px;
+    /* background-color: burlywood; */
+    /* overflow: hidden; */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 45px aqua,0 0 45px aqua;
+    margin-top: 50px;
+}
+.abt_you{
+    font-size: 1.2rem;
+    padding: 5px;
+    position: absolute;
+    width: 250px;
+    color: white;
+}
+.you{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.pro1:hover{
+    transform: translateY(-20px);
+    transition: 1s linear ;
+}
+.contact{
+    height: 550px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    /* background-color: bisque; */
+    display: flex;
+}
+.work{
+    font-size: 1.5rem;
+    color: white;
+}
+.c1{
+    width: 500px;
+}
+.my_descrip{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+}
+.icon_box1{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    /* border: 2px solid aqua; */
+    color: aqua;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+/* .icon_box1:hover{
+     background-color: aqua;
+    border: 2px solid aqua;
+    color: white;
+    box-shadow: 0 0 30px aqua,0 0 30px aqua;
+} */
+.add{
+    font-size: 1.3rem;
+    color: white;
+}
+/* .contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+} */
+ .contact-form form{
+    position: relative;
+    margin-top: 130px;
+    margin-left: 50px;
+ }
+ .contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background-color: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+ }
+ .contact-form textarea{
+    resize: none;
+    height: 220px;
+ }
+@media screen and (min-width:768px) and (max-width:991px){
+    .navbar a{
+    /* display: block; */
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.content{
+    height: 200px;
+    width: 50%;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 40px;
+    color: #fff;
+    row-gap: 30px;
+}
+.image{
+     height: 500px;
+    width: 450px;
+    /* background-color: rgb(8, 238, 161); */
+    /* margin-top: 50px; */
+    margin: auto;
+    padding-top: 50px;
+    /* transform: skewY(25deg); */
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+}
+.name{
+    font-size: 2rem;
+}
+.me{
+     font-size: 1.1rem;
+     animation: moveright 1s ease forwards 0.2s;
+}
+.my_img{
+    height: 300px;
+    width: 300px;
+    margin-top: -100px;
+}
+.container1{
+    display: flex;
+    height: 700px;
+}
+.about{
+    height: 300px;
+    width: 100vw;
+    /* background-color: blue; */
+    margin-left: 10px;
+    margin-top: -300px;
+    display: flex;
+}
+.content1{
+    margin-top: 0px;
+    padding-left:10px;
+    color: white;
+}
+.about_me{
+    font-size: 3rem;
+}
+.para{
+    font-size: 1.2rem;
+    padding-right: 10px;
+}
+.full{
+    font-size: 2rem;
+}
+.img1{
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.myserve{
+    margin-top: 200px;
+}
+.three_div{
+    margin-left: 0px;
+    display: flex;
+    padding-top: 20px;
+    margin-top: 0px;
+    width: 100vw;
+}
+.divs{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.sk{
+    display: block;
+    margin-top: 0px;
+}
+.sk1{
+    margin-left: 0px;
+}
+.sk2{
+    margin-left: 0px;
+}
+.mypro{
+    display: flex;
+    margin-left: 0px;
+    width: 100vw;
+}
+.contact{
+    margin-top: 100px;
+    /* background-color: bisque; */
+    display: flex; 
+}
+ .contact-form form{
+    margin-top: 70px;
+    margin-left: 10px;
+ }
+  .contact-form form input,form textarea{
+    width: 80%;
+    display: block;
+ }
+ .my_descrip{
+    width: 50vw;
+ }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    .navbar a{
+    /* display: block; */
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.content{
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 40px;
+    color: #fff;
+    row-gap: 30px;
+}
+.image{
+     height: 500px;
+    width: 450px;
+    /* background-color: rgb(8, 238, 161); */
+    /* margin-top: 50px; */
+    margin: auto;
+    padding-top: 50px;
+    /* transform: skewY(25deg); */
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+}
+.name{
+    font-size: 1.5rem;
+}
+.me{
+     font-size: 1.1rem;
+     animation: moveright 1s ease forwards 0.2s;
+}
+.my_img{
+    height: 300px;
+    width: 300px;
+}
+.container1{
+    display: block;
+    height: 700px;
+}
+.about{
+    height: 600px;
+    width: 100vw;
+    /* background-color: blue; */
+    margin-left: 10px;
+    margin-top: 0px;
+    display: block;
+}
+.content1{
+    margin-top: 0px;
+    padding-left: 0px;
+    color: white;
+}
+.about_me{
+    font-size: 3rem;
+}
+.para{
+    font-size: 1.3rem;
+    padding-right: 10px;
+}
+.full{
+    font-size: 2rem;
+}
+.img1{
+    margin-top: 70px;
+    margin-left: 200px;
+}
+.myserve{
+    margin-top: 300px;
+}
+.three_div{
+    margin-left: 200px;
+    display: block;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+.divs{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.sk{
+    display: block;
+    margin-top: 600px;
+}
+.sk1{
+    margin-left: 0px;
+}
+.sk2{
+    margin-left: 0px;
+}
+.mypro{
+    display: block;
+    margin-left: 200px;
+}
+.contact{
+    margin-top: 800px;
+    /* background-color: bisque; */
+    display: block;
+}
+ .contact-form form{
+    margin-top: 70px;
+    margin-left: 10px;
+ }
+  .contact-form form input,form textarea{
+    width: 50%;
+    display: block;
+ }
+ .my_descrip{
+    width: 100vw;
+ }
+}
+@media screen and (max-width:575px){
+    .navbar a{
+    /* display: block; */
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.content{
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-left: 40px;
+    color: #fff;
+    row-gap: 30px;
+}
+.image{
+     height: 500px;
+    width: 450px;
+    /* background-color: rgb(8, 238, 161); */
+    /* margin-top: 50px; */
+    text-align: center;
+    padding-top: 50px;
+    /* transform: skewY(25deg); */
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+}
+.name{
+    font-size: 1.5rem;
+}
+.me{
+     font-size: 1.1rem;
+     animation: moveright 1s ease forwards 0.2s;
+}
+.my_img{
+    height: 300px;
+    width: 300px;
+}
+.container1{
+    display: block;
+    height: 700px;
+}
+.about{
+    height: 600px;
+    width: 100vw;
+    /* background-color: blue; */
+    margin-left: 10px;
+    margin-top: 0px;
+    display: block;
+}
+.content1{
+    margin-top: 0px;
+    padding-left: 0px;
+    color: white;
+}
+.about_me{
+    font-size: 3rem;
+}
+.para{
+    font-size: 1.3rem;
+    padding-right: 10px;
+}
+.full{
+    font-size: 2rem;
+}
+.img1{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.myserve{
+    margin-top: 300px;
+}
+.three_div{
+    margin-left: 100px;
+    display: block;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+.divs{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.sk{
+    display: block;
+    margin-top: 600px;
+}
+.sk1{
+    margin-left: 0px;
+}
+.sk2{
+    margin-left: 0px;
+}
+.mypro{
+    display: block;
+    margin-left: 100px;
+}
+.contact{
+    margin-top: 800px;
+    /* background-color: bisque; */
+    display: block;
+}
+ .contact-form form{
+    margin-top: 70px;
+    margin-left: 10px;
+ }
+  .contact-form form input,form textarea{
+    width: 30%;
+    display: block;
+ }
+ .my_descrip{
+    width: 100vw;
+ }
+}
