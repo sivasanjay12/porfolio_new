@@ -7,6 +7,7 @@
 }
 body{
     background-color: rgb(62, 62, 116);
+    overflow-x: hidden;
 }
 
 .header{
@@ -14,9 +15,10 @@ body{
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 20px 10%;
     background-color: rgb(69, 69, 138);
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -324,7 +326,7 @@ h2{
 }
 .skills1{
     height: 400px;
-    width: 500px;
+    width: 90vw;
     /* background-color: greenyellow; */
     margin-top: 5px;
     padding: 20px;
@@ -362,6 +364,7 @@ h2{
     font-size: 2.6rem;
     text-align: center;
     color: white;
+    width: 40vw;
     
 }
 .progress{
@@ -494,7 +497,7 @@ h2{
 }
 .contact{
     height: 550px;
-    width: 1200px;
+    width: 120px;
     margin: auto;
     margin-top: 100px;
     /* background-color: bisque; */
@@ -505,12 +508,14 @@ h2{
     color: white;
 }
 .c1{
-    width: 500px;
+    width: 300px;
+    margin-left: -500px;
 }
 .my_descrip{
     font-size: 1.2rem;
     color: white;
     margin-top: 20px;
+    width: 50vw;
 }
 .icon_box1{
     height: 50px;
@@ -544,7 +549,8 @@ h2{
  .contact-form form{
     position: relative;
     margin-top: 130px;
-    margin-left: 50px;
+    margin-left: 380px;
+    width: 40vw;
  }
  .contact-form form input,form textarea{
     border: none;
@@ -670,7 +676,8 @@ h2{
 }
  .contact-form form{
     margin-top: 70px;
-    margin-left: 10px;
+    margin-left: 160px;
+    width: 40vw;
  }
   .contact-form form input,form textarea{
     width: 80%;
@@ -801,10 +808,17 @@ h2{
     font-size: 15px;
     font-weight: 400;
     margin-left: 25px;
+    width: 40vw;
+    /* right: 0px; */
+    margin-left: 100px;
 }
-body{
+.header{
+    width: 100vw;
+    /* background-color: antiquewhite; */
+}
+/* body{
     overflow-x: hidden;
-}
+} */
 .content{
     height: 300px;
     width: 100%;
@@ -867,16 +881,17 @@ body{
 }
 .img1{
     margin-top: -170px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 .myserve{
-    margin-top: 100px;
+    margin-top: 300px;
 }
 .three_div{
-    margin-left: 100px;
+    margin-left: 20px;
     display: block;
     padding-top: 50px;
     margin-top: 0px;
+    width: 100vw;
 }
 .divs{
     padding-left: 20px;
@@ -897,19 +912,28 @@ body{
 .mypro{
     display: block;
     margin-left: 100px;
+    width:100vw;
+}
+.pro1{
+    margin-left: -80px;
 }
 .contact{
     margin-top: 800px;
     /* background-color: bisque; */
     display: block;
+    margin-left: 510px;
 }
  .contact-form form{
     margin-top: 70px;
-    margin-left: 10px;
+    margin-left: -490px;
+    width:100vw;
+    /* display: none; */
+    overflow-x: hidden;
  }
   .contact-form form input,form textarea{
-    width: 30%;
+    width: 80%;
     display: block;
+    overflow-x: hidden;
  }
  .my_descrip{
     width: 100vw;
