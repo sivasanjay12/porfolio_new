@@ -48,7 +48,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 40px;
     transition: .3s;
     animation: slidetop .5s ease forwards;
 }
@@ -246,6 +246,7 @@ h2{
 .para{
     font-size: 1.3rem;
     padding-right: 10px;
+    width: 60vw;
 }
 .full{
     font-size: 2rem;
@@ -306,7 +307,7 @@ h2{
 }
 .skills{
     height: 500px;
-    width: 450px;
+    width: 90vw;
     /* background-color: greenyellow; */
     padding: 20px;
     color: white;
@@ -314,7 +315,7 @@ h2{
     position: relative;
 }
 .sk{
-    display: flex;
+    /* display: flex; */
     margin-top: 100px;
 }
 .myserve1{
@@ -365,7 +366,7 @@ h2{
     text-align: center;
     color: white;
     width: 40vw;
-    
+    margin-top: 20px;
 }
 .progress{
     height: 5px;
@@ -397,13 +398,13 @@ h2{
     width: 90%;
 }
 .p3{
-    width: 40%;
+    width: 90%;
 }
 .p4{
     width: 70%;
 }
 .p5{
-    width: 90%;
+    width: 60%;
 }
 .progress1{
     height: 5px;
@@ -441,16 +442,16 @@ h2{
     margin-top: 30px;
 }
 .p15{
-    width: 30%;
+    width: 80%;
 }
 .p14{
-    width: 30%;
+    width: 80%;
 }
 .p13{
-    width: 25%;
+    width: 70%;
 }
 .p12{
-    width: 28%;
+    width: 75%;
 }
 .myserve3{
     font-size: 3rem;
@@ -807,13 +808,17 @@ h2{
     /* display: block; */
     font-size: 15px;
     font-weight: 400;
-    margin-left: 25px;
+    /* margin-left: 45px; */
     width: 40vw;
     /* right: 0px; */
-    margin-left: 100px;
+    margin-left: 130px;
 }
+/* .skills1{
+    width: 70vw;
+} */
 .header{
     width: 100vw;
+    /* margin-left: 100px; */
     /* background-color: antiquewhite; */
 }
 /* body{
@@ -845,12 +850,15 @@ h2{
 .me{
      font-size: 1.1rem;
      animation: moveright 1s ease forwards 0.2s;
+     width: 90vw;
 }
 .my_img{
     height: 300px;
     width: 300px;
     margin-top: -400px;
     opacity: 0.4;
+    margin-left: -135px;
+
 }
 .container1{
     display: block;
@@ -875,6 +883,7 @@ h2{
 .para{
     font-size: 1.3rem;
     padding-right: 10px;
+    width: 90vw;
 }
 .full{
     font-size: 2rem;
